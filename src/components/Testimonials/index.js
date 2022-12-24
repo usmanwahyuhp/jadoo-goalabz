@@ -56,9 +56,9 @@ export default function Testimonials() {
 
   return (
     <section className="mb-28">
-      <div className="max-w-7xl mx-auto relative px-4">
-        <div className="flex">
-          <div className="w-6/12 pl-8 pr-20">
+      <div className="w-full lg:max-w-7xl mx-auto relative px-4">
+        <div className="flex flex-wrap">
+          <div className="w-full lg:w-5/12 pl-8 pr-20">
             <div className="flex flex-col mb-16">
               <h3 className="uppercase text-lg mb-2 text-gray-500">
                 Testimonials
@@ -84,7 +84,7 @@ export default function Testimonials() {
               </ul>
             </div>
           </div>
-          <div className="w-6/12 flex items-center justify-center relative">
+          <div className="w-full lg:w-6/12 flex items-center justify-center relative h-[260px] lg:h-auto">
             <div className="absolute -inset-10 -top-20">
               <Swiper
                 modules={[
@@ -146,7 +146,7 @@ export default function Testimonials() {
               </Swiper>
             </div>
           </div>
-          <div className="w-1/12 items-center justify-center flex">
+          <div className="hidden lg:flex lg:w-1/12 items-center justify-center">
             <div className="flex flex-col">
               <button
                 onClick={fnPrev}
