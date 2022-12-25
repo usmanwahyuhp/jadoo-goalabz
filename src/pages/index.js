@@ -44,34 +44,34 @@ export default function Home() {
         />
       </Head>
 
-      <div className="absolute z-10 w-full py-12">
+      <div className="absolute z-20 lg:z-10 w-full py-6 lg:py-12">
         <Header />
       </div>
 
       {/* Hero Section */}
       <section className="relative mb-28">
-        <span className="absolute w-5/12 h-screeen right-0 top-0 bottom-0 ">
+        <span className="absolute w-5/12 h-screeen right-0 top-0 bottom-0">
           <DecorIntersect className="fill-accent-3" />
         </span>
         <div className="w-96 h-96 bg-accent-4/50 rounded-full blur-3xl absolute -left-80 -top-10"></div>
 
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex">
-            <div className="w-5/12 pt-52">
-              <h1 className="text-accent-2 font-bold text-xl uppercase mb-6">
+            <div className="w-full lg:w-5/12 pt-44 lg:pt-52 z-10">
+              <h1 className="text-accent-2 font-bold text-sm lg:text-xl uppercase mb-6">
                 Best Destinations around the world
               </h1>
-              <h2 className="text-gray-900 font-serif text-[58px] leading-[79px] tracking-tighter">
+              <h2 className="text-gray-900 font-serif text-5xl lg:text-[58px] leading-tight lg:leading-[79px] tracking-tighter">
                 Travel,{" "}
                 <span className="relative">
                   enjoy
-                  <span className="absolute left-0 top-full -mt-6 -ml-4 -z-10">
-                    <DecorTextUnderline className="w-[275px] h-[10px] fill-accent-2" />
+                  <span className="absolute left-0 top-full -mt-3 lg:-mt-6 -ml-4 -z-10">
+                    <DecorTextUnderline className="w-[60px] lg:w-[275px] h-1 lg:h-[10px] fill-accent-2" />
                   </span>
                 </span>{" "}
                 and live a new and full life
               </h2>
-              <p className="text-gray-500 max-w-lg leading-8 mb-8">
+              <p className="text-gray-500 max-w-lg text-sm lg:text-base leading-6 lg:leading-8 mb-8">
                 Built Wicket longer admire do barton vanity itself do in it.
                 Preferred to sportsmen it engrossed listening. Park gate sell
                 they west hard for the.
@@ -87,12 +87,14 @@ export default function Home() {
                   <span className="mr-6 bg-accent-2 text-white inline-flex items-center justify-center px-4 py-4 rounded-full shadow-accent-2/30 shadow-[0_15px_30px]">
                     <span class="material-symbols-outlined">play_arrow</span>
                   </span>
-                  <span className="text-gray-500">Play Demo</span>
+                  <span className="hidden lg:block text-gray-500">
+                    Play Demo
+                  </span>
                 </button>
               </div>
             </div>
 
-            <div className="w-7/12 h-[634px] pt-24 relative">
+            <div className="hidden lg:block lg:w-7/12 h-[634px] pt-24 relative">
               <div className="absolute w-[117px] h-[75px] top-24 left-40 z-30">
                 <Image
                   layout="responsive"
@@ -129,14 +131,14 @@ export default function Home() {
           <div className="absolute w-36 h-36 lg:-right-10 -top-10">
             <DecorPlus1 className="decor-plus-style-1" />
           </div>
-          <div className="text-center flex flex-col mb-16">
+          <div className="text-center flex flex-col mb-8 lg:mb-16">
             <h3 className="uppercase text-lg mb-2 text-gray-500">Category</h3>
-            <h3 className="font-serif text-5xl text-gray-900 leading-">
+            <h3 className="font-serif text-4xl lg:text-5xl text-gray-900 leading-tight lg:leading-snug">
               We Offer Best Services
             </h3>
           </div>
-          <div className="flex text-gray-900">
-            <div className="w-3/12 px-8">
+          <div className="flex flex-wrap text-gray-900">
+            <div className="w-full lg:w-3/12 px-8">
               <div className="relative transition-all duration-300 group shadow-none hover:shadow-md flex flex-col items-center justify-center text-center bg-white rounded-[36px]">
                 <div className="absolute transition-all duration-300 opacity-0 group-hover:opacity-100 -z-10 bottom-12 group-hover:bottom-6 left-12 group-hover:left-6 transform -translate-x-1/2 translate-y-1/2 bg-accent-2 rounded-tl-3xl rounded-br-lg w-28 h-28"></div>
                 <div className="relative mb-6 inline-flex h-28">
@@ -151,13 +153,13 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-0 left-5 transform -translate-x-1/2 bg-accent-3 rounded-tl-lg rounded-tr-md rounded-bl-md rounded-br-2xl w-12 h-12"></div>
                 </div>
-                <h4 className="text-xl mb-3">Calculated Weather</h4>
-                <h5 className="px-8 mb-8">
+                <h4 className="text-lg lg:text-xl mb-3">Calculated Weather</h4>
+                <h5 className="px-0 lg:px-8 mb-8">
                   Built Wicket longer admire do barton vanity itself do in it.
                 </h5>
               </div>
             </div>
-            <div className="w-3/12 px-8">
+            <div className="w-full lg:w-3/12 px-8">
               <div className="relative transition-all duration-300 group shadow-none hover:shadow-md flex flex-col items-center justify-center text-center bg-white rounded-[36px]">
                 <div className="absolute transition-all duration-300 opacity-0 group-hover:opacity-100 -z-10 bottom-12 group-hover:bottom-6 left-12 group-hover:left-6 transform -translate-x-1/2 translate-y-1/2 bg-accent-2 rounded-tl-3xl rounded-br-lg w-28 h-28"></div>
                 <div className="relative mb-6 inline-flex h-28">
@@ -172,13 +174,13 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-5 -right-9 transform -translate-x-1/2 bg-accent-3 rounded-tl-lg rounded-tr-md rounded-bl-md rounded-br-2xl w-12 h-12"></div>
                 </div>
-                <h4 className="text-xl mb-3">Calculated Weather</h4>
-                <h5 className="px-8 mb-8">
+                <h4 className="text-lg lg:text-xl mb-3">Calculated Weather</h4>
+                <h5 className="px-0 lg:px-8 mb-8">
                   Built Wicket longer admire do barton vanity itself do in it.
                 </h5>
               </div>
             </div>
-            <div className="w-3/12 px-8">
+            <div className="w-full lg:w-3/12 px-8">
               <div className="relative transition-all duration-300 group shadow-none hover:shadow-md flex flex-col items-center justify-center text-center bg-white rounded-[36px]">
                 <div className="absolute transition-all duration-300 opacity-0 group-hover:opacity-100 -z-10 bottom-12 group-hover:bottom-6 left-12 group-hover:left-6 transform -translate-x-1/2 translate-y-1/2 bg-accent-2 rounded-tl-3xl rounded-br-lg w-28 h-28"></div>
                 <div className="relative mb-6 inline-flex h-28">
@@ -193,13 +195,13 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-7 left-5 transform -translate-x-1/2 bg-accent-3 rounded-tl-lg rounded-tr-md rounded-bl-md rounded-br-2xl w-12 h-12"></div>
                 </div>
-                <h4 className="text-xl mb-3">Calculated Weather</h4>
-                <h5 className="px-8 mb-8">
+                <h4 className="text-lg lg:text-xl mb-3">Calculated Weather</h4>
+                <h5 className="px-0 lg:px-8 mb-8">
                   Built Wicket longer admire do barton vanity itself do in it.
                 </h5>
               </div>
             </div>
-            <div className="w-3/12 px-8">
+            <div className="w-full lg:w-3/12 px-8">
               <div className="relative transition-all duration-300 group shadow-none hover:shadow-md flex flex-col items-center justify-center text-center bg-white rounded-[36px]">
                 <div className="absolute transition-all duration-300 opacity-0 group-hover:opacity-100 -z-10 bottom-12 group-hover:bottom-6 left-12 group-hover:left-6 transform -translate-x-1/2 translate-y-1/2 bg-accent-2 rounded-tl-3xl rounded-br-lg w-28 h-28"></div>
                 <div className="relative mb-6 inline-flex h-28">
@@ -214,8 +216,8 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-3 left-5 transform -translate-x-1/2 bg-accent-3 rounded-tl-lg rounded-tr-md rounded-bl-md rounded-br-2xl w-12 h-12"></div>
                 </div>
-                <h4 className="text-xl mb-3">Calculated Weather</h4>
-                <h5 className="px-8 mb-8">
+                <h4 className="text-lg lg:text-xl mb-3">Calculated Weather</h4>
+                <h5 className="px-0 lg:px-8 mb-8">
                   Built Wicket longer admire do barton vanity itself do in it.
                 </h5>
               </div>
@@ -228,18 +230,18 @@ export default function Home() {
       <section className="mb-28">
         <div className="max-w-7xl mx-auto relative px-4">
           <div className="text-center flex flex-col mb-16">
-            <h3 className="uppercase text-lg mb-2 text-gray-500">
+            <h3 className="uppercase text-sm lg:text-lg mb-2 text-gray-500">
               Top Selling
             </h3>
-            <h3 className="font-serif text-5xl text-gray-900 leading-snug">
+            <h3 className="font-serif text-4xl lg:text-5xl text-gray-900 leading-tight lg:leading-snug">
               Top Destinations
             </h3>
           </div>
-          <div className="flex relative pr-10">
+          <div className="flex flex-wrap relative pr-10">
             <div className="absolute w-[96px] h-[252px] bottom-10 right-0">
               <DecorSwirl1 className="stroke-gray-500" />
             </div>
-            <div className="w-4/12 px-6 relative z-20">
+            <div className="w-full lg:w-4/12 mb-5 lg:mb-0 px-6 relative z-20">
               <div className="rounded-3xl pb-10 shadow-md bg-white flex flex-col">
                 <div className="rounded-tr-3xl rounded-tl-3xl overflow-hidden relative h-96">
                   <Image
@@ -261,7 +263,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-4/12 px-6 relative z-20">
+            <div className="w-full lg:w-4/12 mb-5 lg:mb-0 px-6 relative z-20">
               <div className="rounded-3xl pb-10 shadow-md bg-white flex flex-col">
                 <div className="rounded-tr-3xl rounded-tl-3xl overflow-hidden relative h-96">
                   <Image
@@ -285,7 +287,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-4/12 px-6 relative z-20">
+            <div className="w-full lg:w-4/12 mb-5 lg:mb-0 px-6 relative z-20">
               <div className="rounded-3xl pb-10 shadow-md bg-white flex flex-col">
                 <div className="rounded-tr-3xl rounded-tl-3xl overflow-hidden relative h-96">
                   <Image
@@ -316,13 +318,13 @@ export default function Home() {
       {/* Booking Section */}
       <section className="mb-28">
         <div className="max-w-7xl mx-auto relative px-4">
-          <div className="flex">
-            <div className="w-6/12 pl-8 pr-20">
+          <div className="flex flex-wrap">
+            <div className="w-full lg:w-6/12 pl-8 pr-20">
               <div className="flex flex-col mb-16">
                 <h3 className="uppercase text-lg mb-2 text-gray-500">
                   Easy and Fast
                 </h3>
-                <h3 className="font-serif text-5xl text-gray-900 leading-snug mb-10">
+                <h3 className="font-serif text-4xl lg:text-5xl text-gray-900 leading-snug mb-10">
                   Book your next trip in 3 easy steps
                 </h3>
                 <ul className="flex flex-col gap-y-10 pr-10">
@@ -377,7 +379,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="w-5/12 flex items-center justify-center">
+            <div className="w-full lg:w-5/12 flex items-center justify-center">
               <div className="w-[370px] relative">
                 <div className="w-60 h-60 rounded-full blur-3xl absolute z-10 -top-10 -right-10 bg-accent-4/50"></div>
 
@@ -463,53 +465,53 @@ export default function Home() {
 
       {/* partnership */}
       <section className="mb-28">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex">
-            <div className="w-1/5 px-4">
+        <div className="max-w-full lg:max-w-7xl mx-auto">
+          <div className="flex flex-wrap">
+            <div className="w-full lg:w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-md rounded-2xl transition-all duration-300">
                 <Image
                   alt="client 1"
-                  className="object-none"
+                  className="object-contain lg:object-none"
                   layout="fill"
                   src={`/images/image 27.png`}
                 />
               </div>
             </div>
-            <div className="w-1/5 px-4">
+            <div className="w-full lg:w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-md rounded-2xl transition-all duration-300">
                 <Image
                   alt="client 2"
-                  className="object-none"
+                  className="object-contain lg:object-none"
                   layout="fill"
                   src={`/images/image 28.png`}
                 />
               </div>
             </div>
-            <div className="w-1/5 px-4">
+            <div className="w-full lg:w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-md rounded-2xl transition-all duration-300">
                 <Image
                   alt="client 3"
-                  className="object-none"
+                  className="object-contain lg:object-none"
                   layout="fill"
                   src={`/images/image 29.png`}
                 />
               </div>
             </div>
-            <div className="w-1/5 px-4">
+            <div className="w-full lg:w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-md rounded-2xl transition-all duration-300">
                 <Image
                   alt="client 4"
-                  className="object-none"
+                  className="object-contain lg:object-none"
                   layout="fill"
                   src={`/images/image 30.png`}
                 />
               </div>
             </div>
-            <div className="w-1/5 px-4">
+            <div className="w-full lg:w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-md rounded-2xl transition-all duration-300">
                 <Image
                   alt="client 5"
-                  className="object-none"
+                  className="object-contain lg:object-none"
                   layout="fill"
                   src={`/images/image 31.png`}
                 />
@@ -530,21 +532,21 @@ export default function Home() {
               <div className="absolute flex justify-center items-center text-white rounded-full transform -translate-y-1/2 translate-x-1/2 z-30 top-0 right-0 w-16 h-16 bg-gradient-to-b from-accent-4/60 to-accent-4">
                 <span className="material-symbols-outlined">near_me</span>
               </div>
-              <div className="bg-accent-3/20 overflow-hidden rounded-tl-[120px] rounded-3xl relative z-20 pt-20 pb-20 mb-8">
-                <div className="w-[390px] h-[390px] absolute z-0 -top-32 -right-32 transform -rotate-45">
+              <div className="bg-accent-3/20 overflow-hidden rounded-tl-[70px] lg:rounded-tl-[120px] rounded-3xl relative z-20 pt-20 pb-20 mb-8">
+                <div className="w-[190px] h-[190px] lg:w-[390px] lg:h-[390px] absolute z-0 -top-32 -right-32 transform -rotate-45">
                   <DecorEllips1 className="stroke-accent-6 opacity-10" />
                 </div>
-                <div className="w-[390px] h-[390px] absolute z-0 -bottom-32 left-4 transform ">
+                <div className="w-[190px] h-[190px] lg:w-[390px] lg:h-[390px] absolute z-0 -bottom-32 left-4 transform ">
                   <DecorEllips1 className="stroke-accent-6 opacity-10" />
                 </div>
                 <div className="relative ">
                   <div className="relative z-10">
-                    <h6 className="text-gray-500 font-bold text-3xl px-36 text-center leading-normal mb-10">
+                    <h6 className="text-gray-500 font-bold text-2xl lg:text-3xl px-10 lg:px-36 text-center leading-normal mb-10">
                       Subscribe to get information, latest news and other
                       interesting offers about Cobham
                     </h6>
-                    <form className="flex justify-center">
-                      <fieldset className="relative mr-8">
+                    <form className="flex justify-center mx-5 lg:mx-auto">
+                      <fieldset className="relative mr-2 lg:mr-8">
                         <div className="w-16 h-16 flex justify-center items-center absolute">
                           <span className="material-symbols-outlined text-gray-500">
                             mail_outline
@@ -553,7 +555,7 @@ export default function Home() {
                         <input
                           type="text"
                           placeholder="Your Email"
-                          className="appearance-none rounded-lg py-5 pl-14 bg-white w-96 focus:outline-none transition duration-300 border-20 border-transparent focus:border-accent-6"
+                          className="appearance-none rounded-lg py-5 pl-14 bg-white w-full lg:w-96 focus:outline-none transition duration-300 border-20 border-transparent focus:border-accent-6"
                         />
                       </fieldset>
 
@@ -572,9 +574,9 @@ export default function Home() {
       {/* Footer */}
       <section className="pb-32 relative overflow-hidden">
         <div className="w-60 h-60 rounded-full blur-3xl absolute z-10 -bottom-10 -right-10 bg-accent-6/20"></div>
-        <div className="max-w-7xl mx-auto relative px-4">
-          <div className="flex mb-12">
-            <div className="w-3/12 px-4">
+        <div className="max-w-full lg:max-w-7xl mx-auto relative px-4">
+          <div className="flex flex-wrap mb-12">
+            <div className="w-full lg:w-3/12 px-4 mb-10 lg:mb-0">
               <h6 className="text-5xl tracking-tight text-gray-900 mb-4">
                 Jadoo.
               </h6>
@@ -582,7 +584,7 @@ export default function Home() {
                 Book your trip in minute, get full Control for much longer.
               </p>
             </div>
-            <div className="w-2/12 px-4">
+            <div className="w-full lg:w-2/12 px-4 mb-10 lg:mb-0">
               <h6 className="text-xl tracking-tight text-gray-900 mt-2 mb-7">
                 Company
               </h6>
@@ -604,7 +606,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="w-2/12 px-4">
+            <div className="w-full lg:w-2/12 px-4 mb-10 lg:mb-0">
               <h6 className="text-xl tracking-tight text-gray-900 mt-2 mb-7">
                 Contact
               </h6>
@@ -626,7 +628,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="w-2/12 px-4">
+            <div className="w-full lg:w-2/12 px-4 mb-10 lg:mb-0">
               <h6 className="text-xl tracking-tight text-gray-900 mt-2 mb-7">
                 More
               </h6>
@@ -648,7 +650,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="w-2/12 px-4">
+            <div className="w-full lg:w-2/12 px-4 mb-10 lg:mb-0">
               <ul className="text-lg text-gray-500 flex gap-x-5">
                 <li>
                   <a
